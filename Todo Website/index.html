@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo Cloud</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt=""> -->
+            <div class="date">
+                <h2 id="month"></h2>
+                <h2 id="date"></h2>
+                <h2 id="year"></h2>
+                <h1 id="day"></h1>
+            </div>
+            <div class="clear">
+                <i class="re fa fa-refresh" onclick="refresh()"
+                    style="position: absolute; top:20px; right:10px; font-size:23px;color:rgb(255, 255, 255)"></i>
+            </div>
+        </div>
+        <!-- <br> -->
+        <section class="task-list">
+            <div id="tasks">
+                <div class="task" id="task">
+
+                </div>
+            </div>
+        </section>
+        <form class="add-todo" id="new-task-form">
+            <input type="text" name="inpp" id="inp inpp new-task-input" class="inp inpp" placeholder="Add Your Todo">
+            <br><br><br>
+            <input type="submit" id="new-task-submit" value="submit" class="btn">
+        </form>
+    </div>
+</body>
+<script src="./javascript/app.js"></script>
+
+</html>
